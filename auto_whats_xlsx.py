@@ -53,6 +53,7 @@ class Chrome(Tabela_Numero):
             WebDriverWait(self.chrome, 20).until(EC.element_to_be_clickable((By.XPATH, "//button[@aria-label='Enviar']")))
             enter = self.chrome.find_element(By.XPATH, "//button[@aria-label='Enviar']" )
             enter.click()
+            sleep(3)
 
 
         except Exception as e:
